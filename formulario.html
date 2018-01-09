@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formulário</title>
+	<link type="text/css" rel="stylesheet" href="estilo1.css"/>
+</head>
+<body>
+<h1>Cadastramento</h1>
+<form method="post" action="incluir.php">
+	<input type="button" value="Novo registro" onclick="window.location='formulario.html'"/>
+	<a href="consulta.php">Consultar Cadastros</a>
+
+	<br/>
+    
+
+	<label>Código:</label>
+	<input type="text" id="codigo" name="codigo" maxlength="15" placeholder="Digite apenas números"/>
+	
+	<br/>
+    
+    <label>Nome:</label>
+    <input type="text" id="nome" name="nome" maxlength="70"/>
+    
+    <br/>
+
+	<label>Descrição:</label>
+	<input type="text" id="desc" name="descricao" maxlength="200"/>
+	
+    <br/>
+    
+    <label>Anexo:</label>
+    <input type="text" id="anexo" name="anexo" maxlength="15"/>
+    
+    <br>
+
+	<input type="submit" value="Incluir Cadastro"/>
+	
+	<br/><br/>
+</form>
+</body>
+</html>
